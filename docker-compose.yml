@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  api-test-candidates-backend:
+    image: bitnami/postgresql
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRESQL_USERNAME=candidates
+      - POSTGRESQL_PASSWORD=abcde
+      - POSTGRESQL_DATABASE=candidates
